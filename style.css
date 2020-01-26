@@ -1,0 +1,243 @@
+body{
+	font-family: "Courier New", monospace;
+}
+header{
+	background-color: #000937;
+	display: grid;
+	grid-template-rows: 50px;
+	grid-template-columns: repeat(12, 1fr);
+	align-content: center;
+	line-height: 50px;
+}
+button{
+	background-color: #4AAB00;
+	justify-content: right;
+	height: 30px;
+	width: 100px;
+	color: white;
+	font-family: "Courier New", monospace;
+}
+
+.foody{
+	color: white;
+	font-family: "Courier New", monospace;
+	grid-column: 2 / span 1;
+}
+a{
+	text-decoration: none;
+	font-family: "Courier New", monospace;
+	color: white;
+}
+nav{
+	grid-column: 9 / span 3;
+}
+.buy-now{
+	grid-column: 12 / span 1;
+}
+.section1{
+	background-color: #000937;
+	color: white;
+	background-image: url(https://images.unsplash.com/photo-1447078806655-40579c2520d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	grid-template-rows: 150px 50px 100px 1fr 1fr;
+	grid-template-columns: repeat(12, 1fr);
+}
+.sect1h1{
+	grid-column: 2/ span 6;
+	grid-row: 2 / span 1;
+}
+.sect1h1, .sect1p{
+	text-shadow: 1px 1px black;
+}
+.sect1p{
+	grid-column: 2 / span 5;
+	grid-row: 3 / span 1;
+}
+.details{
+	grid-column: 2 / span 1;
+	grid-row: 4 / span 1;
+}
+.section2{
+	height: 350px;
+	display: grid;
+	grid-template-rows: 50px 200px 50px;
+	grid-template-columns: repeat(2, 1fr);
+}
+.sect2h, .sect2p, .details2{
+	grid-column: 1 / span 1;
+}
+.sect2h{
+	grid-row: 1 / span 1;
+	line-height: 1.6;
+}
+.sect2p{
+	grid-row: 2 / span 1;
+	align-content: center;
+	margin: 50px auto;
+}
+.details2{
+	grid-row: 3 / span 1;
+}
+.sect2img{
+	grid-row: 1 / span 3;
+	grid-column: 2 / span 1;
+	align-content: center;
+	height: 300px;
+	width: 300px;
+	padding: 25px 200px;
+}
+.pictures{
+	width: 150px;
+	height: 150px;
+	border: 2px solid black;
+	background-color: white;
+	font-weight: 900;
+}
+.section3{
+	background-color: #FFFFFF;
+	background-image: url(https://images.unsplash.com/photo-1464195643332-1f236b1c2255?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1649&q=80);
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	display: grid;
+	grid-template-rows: 25px 75px 200px;
+	grid-template-columns: repeat(12, 1fr);
+}
+.sect3h{
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 6;
+}
+.sect3h, .sect3p{
+	text-shadow: 1px 1px black;
+}
+.sect3p{
+	color: white;
+	grid-row: 2 / span 1;
+	grid-column: 1 / span 6;
+}
+.pasta, .lemonia-pic, .biriyani-pic, .mangua-pic{
+	height: 75px;
+	width: 75px;
+	align-content: center;
+}
+.pasta{
+	grid-row: 3 / span 1;
+	grid-column: 2 / span 2;
+}
+.lemonia-pic{
+	grid-row: 3 / span 1;
+	grid-column: 4 / span 2;
+}
+.mangua-pic{
+	grid-row: 3 / span 1;
+	grid-column: 6 / span 2;
+}
+.biriyani-pic{
+	grid-row: 3 / span 1;
+	grid-column: 8 / span 2;
+}
+.menu-head{
+	text-align: center;
+}
+h2, hr, h4, h5, .price, .reservation, .footer{
+	color: #4AAB00;
+}
+hr{
+	width: 50px;
+}
+h4{
+	text-decoration: underline;
+	font-weight: 900;
+	font-size: 24px;
+}
+.menu-items{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+.pizza{
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 1;
+}
+.lemo{
+	grid-row: 1 / span 1;
+	grid-column: 2 / span 1;
+}
+.fishis{
+	grid-row: 2 / span 1;
+	grid-column: 1 / span 1;
+}
+.megis{
+	grid-row: 2 / span 1;
+	grid-column: 2 / span 1;
+}
+.menu{
+	/*background-image: url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+	background-size: cover;
+	background-position: center;
+	opacity: 0.2;*/
+	background-color: #E9E9E9;
+	display: grid;
+	grid-template-rows: 
+}
+.book{
+	background-color: #09012A;
+	text-align: center;
+	height: 300px;
+	display: grid;
+	grid-template-rows: 30px 90px 90px 90px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+}
+.table{
+	grid-row: 1 / span 1;
+	grid-column: 3 / span 1;
+}
+.instructions{
+	color: white;
+	grid-row: 2 / span 1;
+	grid-column: 3 / span 1;
+}
+.date{
+	grid-column: 2 / span 1;
+	grid-row: 3 / span 1;
+}
+.time{
+	grid-column: 3 / span 1;
+	grid-row: 3 / span 1;
+}
+.number{
+	grid-column: 4 / span 1;
+	grid-row: 3 / span 1;
+}
+.book-now{
+	grid-row: 4 / span 1;
+	grid-column: 3 / span 1;
+	align-content: center;
+}
+footer{
+	background-color: #010814;
+	color: white;
+	height: 100px;
+	display: grid;
+	grid-template-rows: 50px 50px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.foody2, .social-media{
+	grid-row: 1 / span 1;
+}
+.foody2, .copyright{
+	grid-column: 1 / span 1;
+}
+.copyright{
+	grid-row: 2 / span 1;
+}
+.credit{
+	grid-row: 1 / span 2;
+	grid-column: 3 / span 1;
+}
+.social-media{
+	grid-column: 5 / span 1;
+}
