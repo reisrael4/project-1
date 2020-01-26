@@ -1,5 +1,6 @@
 body{
 	font-family: "Courier New", monospace;
+	height: 200vh;
 }
 header{
 	background-color: #000937;
@@ -16,6 +17,7 @@ button{
 	width: 100px;
 	color: white;
 	font-family: "Courier New", monospace;
+	margin-top: 10px;
 }
 
 .foody{
@@ -29,7 +31,7 @@ a{
 	color: white;
 }
 nav{
-	grid-column: 9 / span 3;
+	grid-column: 8 / span 4;
 }
 .buy-now{
 	grid-column: 12 / span 1;
@@ -61,13 +63,13 @@ nav{
 	grid-row: 4 / span 1;
 }
 .section2{
-	height: 350px;
+	height: 400px;
 	display: grid;
-	grid-template-rows: 50px 200px 50px;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 100px 200px 100px;
+	grid-template-columns: repeat(12, 1fr);
 }
 .sect2h, .sect2p, .details2{
-	grid-column: 1 / span 1;
+	grid-column: 4 / span 3;
 }
 .sect2h{
 	grid-row: 1 / span 1;
@@ -76,18 +78,18 @@ nav{
 .sect2p{
 	grid-row: 2 / span 1;
 	align-content: center;
-	margin: 50px auto;
+	margin: 0 auto;
 }
 .details2{
 	grid-row: 3 / span 1;
 }
 .sect2img{
 	grid-row: 1 / span 3;
-	grid-column: 2 / span 1;
+	grid-column: 7 / span 2;
 	align-content: center;
 	height: 300px;
 	width: 300px;
-	padding: 25px 200px;
+	padding: 25px 20px;
 }
 .pictures{
 	width: 150px;
@@ -95,6 +97,10 @@ nav{
 	border: 2px solid black;
 	background-color: white;
 	font-weight: 900;
+	margin: 15 auto;
+	display: grid;
+	grid-template-rows: 100px 50px;
+	grid-template-columns: 1fr;
 }
 .section3{
 	background-color: #FFFFFF;
@@ -103,12 +109,14 @@ nav{
 	background-position: center;
 	height: 300px;
 	display: grid;
-	grid-template-rows: 25px 75px 200px;
+	grid-template-rows: 30px 70px 200px;
 	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 5px;
 }
 .sect3h{
 	grid-row: 1 / span 1;
-	grid-column: 1 / span 6;
+	grid-column: 6 / span 2;
+	margin: 0 auto;
 }
 .sect3h, .sect3p{
 	text-shadow: 1px 1px black;
@@ -116,31 +124,115 @@ nav{
 .sect3p{
 	color: white;
 	grid-row: 2 / span 1;
-	grid-column: 1 / span 6;
+	grid-column: 5 / span 4;
+	text-align: center;
+	font-weight: 700;
+	margin: 0 auto;
+}
+.card-img{
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 1;
+	margin: 10px auto;
+}
+.card-txt{
+	grid-row: 2 / span 1;
+	grid-column: 1 / span 1;
+	margin: 0 auto;
+	text-align: center;
 }
 .pasta, .lemonia-pic, .biriyani-pic, .mangua-pic{
-	height: 75px;
-	width: 75px;
-	align-content: center;
+	height: 75%;
+	width: 75%;
+	margin: 0, auto;
 }
-.pasta{
+.italiano{
 	grid-row: 3 / span 1;
-	grid-column: 2 / span 2;
+	grid-column: 5 / span 1;
 }
-.lemonia-pic{
+.lemonia{
 	grid-row: 3 / span 1;
-	grid-column: 4 / span 2;
+	grid-column: 6 / span 1;
 }
-.mangua-pic{
+.mangua{
 	grid-row: 3 / span 1;
-	grid-column: 6 / span 2;
+	grid-column: 7 / span 1;
 }
-.biriyani-pic{
+.biriyani{
 	grid-row: 3 / span 1;
-	grid-column: 8 / span 2;
+	grid-column: 8 / span 1;
+}
+.overlay{
+	opacity: 0.8;
+	background-color: #E9E9E9;
+	height: 900px;
+}
+.overlay, .menu-content{
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 1;
+}
+.menu-content{
+	position: relative;
+	z-index: 1;
+	text-shadow: 1px 1px grey;
+}
+.menu{
+	background-image: url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+	background-size: cover;
+	background-position: center;
+	height: 900px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
 }
 .menu-head{
 	text-align: center;
+}
+.pizza, .lemo, .fishis, .megis{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 30px 1fr 1fr 1fr 1fr;
+	height: 350px;
+	width: 350px;
+}
+h4{
+	margin-top: 0;
+	grid-row: 1 / span 1;
+}
+.mexicana,{
+	grid-row: 2 / span 1;
+}
+.dish{
+	height: 80px;
+	width: 350px;
+	display: grid;
+	grid-template-rows: 20px 60px;
+	grid-template-columns: 1fr 70px;
+}
+.margherita{
+	grid-row: 3 / span 1;
+}
+.hawaiian{
+	grid-row: 4 / span 1;
+}
+.chicken{
+	grid-row: 5 / span 1;
+}
+.dish-name{
+	grid-column: 1 / span 1;
+	margin-top: 0;
+	grid-row: 1 / span 1;
+}
+.dish-description{
+	grid-row: 2 / span 1;
+	grid-column: 1 / span 1;
+	padding: 0;
+	margin: 0;
+}
+.price{
+	grid-row: 2 / span 1;
+	grid-column: 2 / span 1;
+	margin-top: 40px;
+	font-weight: 900;
 }
 h2, hr, h4, h5, .price, .reservation, .footer{
 	color: #4AAB00;
@@ -155,33 +247,24 @@ h4{
 }
 .menu-items{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 .pizza{
 	grid-row: 1 / span 1;
-	grid-column: 1 / span 1;
+	grid-column: 2 / span 1;
 }
 .lemo{
 	grid-row: 1 / span 1;
-	grid-column: 2 / span 1;
+	grid-column: 3 / span 1;
 }
 .fishis{
 	grid-row: 2 / span 1;
-	grid-column: 1 / span 1;
+	grid-column: 2 / span 1;
 }
 .megis{
 	grid-row: 2 / span 1;
-	grid-column: 2 / span 1;
-}
-.menu{
-	/*background-image: url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
-	background-size: cover;
-	background-position: center;
-	opacity: 0.2;*/
-	background-color: #E9E9E9;
-	display: grid;
-	grid-template-rows: 
+	grid-column: 3 / span 1;
 }
 .book{
 	background-color: #09012A;
@@ -220,9 +303,9 @@ h4{
 footer{
 	background-color: #010814;
 	color: white;
-	height: 100px;
+	height: 60px;
 	display: grid;
-	grid-template-rows: 50px 50px;
+	grid-template-rows: 30px 30px;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .foody2, .social-media{
@@ -233,6 +316,7 @@ footer{
 }
 .copyright{
 	grid-row: 2 / span 1;
+	margin-top: 10px;
 }
 .credit{
 	grid-row: 1 / span 2;
@@ -240,4 +324,75 @@ footer{
 }
 .social-media{
 	grid-column: 5 / span 1;
+}
+@media screen and (max-width: 576px){
+	.hidden-small{
+		display: none;
+	}
+	.small-width{
+		width: 100%;
+		font-size: medium;
+	}
+	.small-nav{
+		display: none;
+	}
+	.small-button{
+		height: 30px;
+		width: 75px;
+	}
+	.small-sect1h1{
+		grid-row: 1 / span 1;
+		grid-column: 3 / span 1;
+	}
+	.small-sect1p{
+		grid-row: 2 / span 1;
+		grid-column: 3 / span 6;
+	}
+	.details-small{
+		grid-row: 5 / span 1;
+		grid-column: 3 / span 1;
+	}
+	.small-sect2img{
+		display: none;
+	}
+	.small-sect2p{
+		grid-column: 4 / span 6;
+	}
+	.small-menu{
+		display: none;
+	}
+	.small-menu-items{
+		max-width: 565px;
+
+	}
+	.small-menu-head{
+		text-align: center;
+		margin-bottom: 0;
+	}
+	.small-hr{
+		display: none;
+	}
+	.small-overlay{
+		max-width: 565px;
+	}
+	.small-instructions{
+		display: none;
+	}
+	.small-credit{
+		font-size: small;
+	}
+	.small-copyright{
+		font-size: x-small;
+	}
+	.small-box-width{
+		height: 200px;
+		width: 175px;
+		padding: 75px 10px 75px 10px;
+		margin: 0 auto;
+	}
+	.small-menu-description{
+		font-size: x-small;
+		max-width: 175px;
+
+	}
 }
