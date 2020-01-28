@@ -5,7 +5,7 @@ Using HTML and CSS I created a responsive webpage from a mock in Adobe XD, emplo
 This page is designed run on any web
 
 ## Deployment
-reisrael4.github.io
+https://reisrael4.github.io
 
 ## Built With
 * Adobe XD
